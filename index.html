@@ -273,12 +273,17 @@
         </div>
       </div>
   
-      <form class="contact-form">
-        <input type="text" placeholder="Nombre completo" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Teléfono">
-        <input type="text" placeholder="Empresa">
-        <textarea placeholder="Mensaje" rows="4"></textarea>
+      <form action="https://formsubmit.co/agenciametodo.ar@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="telefono" placeholder="Teléfono" required>
+        <input type="text" name="empresa" placeholder="Empresa" required>
+        <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+      
+        <!-- Opcionales -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://metodo-agencia.vercel.app/">
+      
         <button type="submit">Enviar</button>
       </form>
     </div>
