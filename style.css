@@ -73,7 +73,7 @@ h2 {
 
 /* Seccion de inicio */
 #inicio {
-    position: relative; /* Para posicionar el overlay */
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,10 +82,8 @@ h2 {
     background-image: url('./imgs/inicio_bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* Se mantiene el background original */
 }
 
-/* Overlay azul transparente en el inicio */
 #inicio::before {
     content: "";
     position: absolute;
@@ -93,11 +91,10 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(46, 146, 178, 0.4); /* Azul con 40% de opacidad */
+    background-color: rgba(46, 146, 178, 0.4);
     z-index: 1;
 }
 
-/* Se asegura que el contenido del #inicio se muestre por encima del overlay */
 #inicio > * {
     position: relative;
     z-index: 2;
@@ -159,7 +156,7 @@ h2 {
     justify-items: center;
 }
 
-/* Cards en Nosotros y Servicios: fondo blanco */
+/* Cards en Nosotros y Servicios: */
 .nosotros-card-container .card,
 .servicios-card-container .card {
     width: 100%;
@@ -201,7 +198,7 @@ h2 {
     text-align: center;
 }
 
-/* Sección de Servicios (contenedor de cards) */
+/* Sección de Servicios */
 #servicios {
     background: rgb(216,228,228);
 }
@@ -215,7 +212,7 @@ h2 {
     justify-items: center;
 }
 
-/* Sección Como lo hacemos: estilos solo para sus cards */
+/* Sección Como lo hacemos */
 .como-lo-hacemos {
     padding: 4rem 1rem;
     background-color: #fff;
@@ -250,15 +247,15 @@ h2 {
 }
 
 .como-lo-hacemos-card-container .card:nth-child(odd) {
-    background-color: #fff0df; /* Color beige claro */
+    background-color: #fff0df;
 }
 
 .como-lo-hacemos-card-container .card:nth-child(even) {
-    background-color: #d8e6ea; /* Azul claro */
+    background-color: #d8e6ea;
 }
 
 .como-lo-hacemos-card-container .card svg {
-    color: #0084a3; /* Azul vibrante */
+    color: #0084a3;
 }
 
 .como-lo-hacemos-card-container .card h3 {
